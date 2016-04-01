@@ -8,7 +8,7 @@ angular.module('promiseApp', [])
 
 .factory('promiseService', function($q, $timeout, $http) {
 
-
+//Cuatom filter
   var description = function() {
     var deferred = $q.defer();
 
@@ -34,6 +34,8 @@ angular.module('promiseApp', [])
   $scope.countries = [];
   $scope.keys = [];
 
+
+//$http service
   $http({
       method: 'GET',
       url: 'https://restcountries.eu/rest/v1/all'
