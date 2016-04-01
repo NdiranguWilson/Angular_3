@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="promiseApp">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+    <script src="./js/promise.js"></script>
+  </head>
+
+  <body  ng-controller="promiseCtrl">
+    <h1>Messages</h1>
+    <ul>
+      <li ng-repeat="message in messages">{{ message }}</li>
+    </ul>
+    <h1>Countries</h1>
+    <ul>
+      <li ng-repeat="country in countries">{{ country }}</li>
+    </ul>
+  </body>
+
+</html>
